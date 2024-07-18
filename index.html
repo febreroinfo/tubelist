@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>tubeList</title>
+<meta name="description" content="Generate an untitled playlist from a list of YouTube URLs."/>
+<meta name="keywords" content="Jose Febrero, Tools, tubeList"/>
+<meta name="theme-color" content="#ff0000"/>
+<meta property="og:site_name" content="tubeList"/>
+<meta property="og:title" content="tubeList"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://github.com/febreroinfo/"/>
+<meta property="og:description" content="Generate an untitled playlist from a list of YouTube URLs."/>
+<meta property="og:image" content="./assets/images/merson.png"/>
+<link rel="icon" href="./assets/images/favicon/favicon.ico" sizes="16x16"/>
+<link rel="icon" type="image/svg+xml" href="./assets/images/favicon/favicon.svg"/>
+<link rel="apple-touch-icon" href="./assets/images/favicon/apple-touch-icon.png"/>
+<link rel="manifest" href="./assets/images/favicon/manifest.json"/>
+<link rel="stylesheet" href="./assets/styles/main.min.css"/></head>
+<body>
+<header class="navbar">
+<a href="#home" aria-label="Skip to Content" class="skip">Skip to Content</a>
+<a href="/" target="_self" title="home">
+<span class="logo">
+<img src="./assets/images/svg/tubelist.svg" width="125" height="31" alt="tubeList"/></span></a>
+<nav>
+<button id="menu">Info</button></nav></header>
+<main class="content">
+<section id="home" data-open="open" class="content__item">
+<article>
+<div class="content__group">
+<h1>Playlist through Copy and Paste</h1>
+<p>Generate an untitled YouTube playlist from a list of URLs up to 50 link.</p>
+<figure class="preview">
+<img alt="Playlist Preview" width="1140" height="487" sizes="(min-width: 1260px) 1140px, 92.77vw" src="./assets/images/hero/tubelist_zmkbfm_c_scale,w_200.webp" srcset="
+./assets/images/hero/tubelist_zmkbfm_c_scale,w_200.webp 200w,
+./assets/images/hero/tubelist_zmkbfm_c_scale,w_720.webp 720w,
+./assets/images/hero/tubelist_zmkbfm_c_scale,w_1065.webp 1065w,
+./assets/images/hero/tubelist_zmkbfm_c_scale,w_1280.webp 1280w"/></figure></div>
+<form id="list" class="form">
+<div class="form__group">
+<label for="links">Paste Links Below</label>
+<textarea id="links"></textarea></div>
+<button id="generate" type="button" class="form__button">Generate YouTube Playlist</button></form></article></section>
+<section id="info" data-open="false" class="content__item">
+<article>
+<h2>What is it?</h2>
+<p>A tool that generate an untitled playlist from a list of YouTube URLs.</p></article>
+<article>
+<h2>How to use it?</h2>
+<ol>
+<li>
+<p>Paste each links separated by a new line.</p></li>
+<li>
+<p>Click the
+<code>Generate YouTube Playlist</code>&nbsp;button and view the untitled playlist.</p></li></ol></article></section></main>
+<footer>
+<p>
+<span>Made with&nbsp;</span>
+<span>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="footer__icon">
+<path d="M0 0h24v24H0z" fill="none" stroke="none"></path>
+<path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" class="icon__active"></path>
+<path d="M12 6l-3.293 3.293a1 1 0 0 0 0 1.414l.543 .543c.69 .69 1.81 .69 2.5 0l1 -1a3.182 3.182 0 0 1 4.5 0l2.25 2.25" class="icon__active"></path>
+<path d="M12.5 15.5l2 2" class="icon__active"></path>
+<path d="M15 13l2 2" class="icon__active"></path></svg></span>
+<span>&nbsp;by FebreroInfo. 2024</span></p>
+<ul>
+<li>
+<a href="https://github.com/febreroinfo" target="_blank" rel="noopener noreferrer">Github</a></li>
+<li>
+<a href="https://codepen.io/febreroinfo" target="_blank" rel="noopener noreferrer">Codepen</a></li>
+<li>
+<a id="email" href="#" data-email="false" tabindex="0">Contact</a></li></ul>
+<figure id="status" data-open="false" aria-label="Network Status" class="network">
+<span id="online" data-open="false" class="network__online">Hurray! Internet is back online.</span>
+<span id="offline" data-open="false" class="network__offline">Opps! Internet is offline.</span></figure></footer></body>
+<script defer=" " src="./assets/scripts/main.min.js"></script></html>
