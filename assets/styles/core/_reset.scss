@@ -1,0 +1,53 @@
+// Box model
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+
+button,
+dialog {
+  border: 0;
+}
+
+// Custom
+a {
+  color: var(--theme-text);
+  transition: var(--theme-transition);
+
+  &:focus,
+  :focus-visible {
+    outline: 2px solid;
+    outline-offset: 5px;
+  }
+}

@@ -1,0 +1,56 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  position: sticky;
+  top: 0;
+  max-height: 67px;
+  z-index: 1;
+  background-color: var(--theme-accent);
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1em;
+    min-width: 143px;
+  }
+
+  a,
+  button {
+    color: var(--theme-text-alt);
+    text-decoration: none;
+    cursor: pointer;
+    min-width: 35px;
+    will-change: auto;
+    transition: var(--theme-transition);
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    // Focus
+    &:focus,
+    :focus-visible {
+      outline: 1px solid var(--theme-text-alt);
+      outline-offset: 5px;
+    }
+  }
+
+  button {
+    border: 0;
+    background-color: transparent;
+  }
+}
+
+.logo {
+  --logo-width: 125px;
+
+  display: block;
+  width: var(--logo-width);
+
+  img {
+    height: auto;
+  }
+}

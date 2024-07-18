@@ -1,0 +1,16 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding: var(--scroll-padding, 5rem);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  font-family: var(--theme-font);
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.9186rem + 0.4651vw, 1.25rem);
+  color: var(--theme-text);
+  background-color: var(--theme-bg);
+}
